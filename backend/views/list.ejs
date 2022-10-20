@@ -1,0 +1,67 @@
+
+
+<%- include("header") -%> 
+
+<link rel="stylesheet" href="css/styles.css">
+    <div class="box" id="heading"> 
+        <h1> <%= listTitle %></h1>
+    </div>
+
+    <div class="box"> 
+
+
+        <% newListItem.forEach(function (item){ %> 
+
+            <form action="/delete" method="post"> 
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="<%= item._id%>" onchange="this.form.submit()">
+                <p> <%= item.name%></p>  
+             </div>
+
+            </form>
+      <%   }) %> 
+
+        <!-- <% for(var i=0; i< newListItem.length; i++){%>
+
+            <div class="item"> 
+                <input type="checkbox">
+                <p> <%= newListItem[i].name %></p>
+            </div>
+
+    <%  } %> -->
+
+
+    <form class="item" action="/" method="post">
+
+        <input type="text" name="newItem" placeholder="new item"  autocomplete="off">
+        <button type="submit" name="list" value=<%= listTitle%>>+</button>
+
+     </form>
+
+    </div>
+
+
+    <%- include("footer") -%> 
+
+<!-- 
+    <ul>
+
+         <li> Buy Food </li>
+        <li> Cook Food </li>
+        <li> Eat Food</li> 
+         <li> <%= newListItem%> </li> 
+
+        <% for(var i=0; i< newListItem.length; i++){%>
+
+            <li> <%= newListItem[i] %></li>
+    <%    } %>
+
+        <form class="" action="/" method="post">
+
+            <input type="text" name="newItem">
+            <button type="submit" name="button" >Add</button>
+
+         </form>
+
+    </ul> -->
+    

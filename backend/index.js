@@ -20,6 +20,12 @@ app.use(bodyParser.json())
 // Adding a Router
 app.use('/users', router);
 
+// app.get("/about", function(req, res){
+
+//     res.render("about");
+// });
+
+
 app.get('/', (req, res) => {
     res.send('Hello Universe!')
 })
