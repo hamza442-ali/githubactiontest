@@ -6,7 +6,7 @@
 import express from 'express'; // <-- Module Style import
 import bodyParser from 'body-parser';
 import path from 'path';
-import { getDate } from './views/date.js';
+import { getDate } from '../frontend/views/date.js';
 import mongoose from 'mongoose';
 const __dirname = path.resolve();
 
