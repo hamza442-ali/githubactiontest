@@ -6,6 +6,10 @@ import {BuyerSidebar} from './Views/SideBar';
 import {  Link, Route, Routes } from 'react-router-dom';
 import { NavSearch} from './Views/searchNav';
 import { JobRequest } from './Views/AddJobRequest';
+import { FetchData } from './Views/fetchJobsRequests';
+import {JobReqDisplay} from './Views/fetchJobsRequests';
+
+
 
 
 
@@ -14,8 +18,10 @@ export const App =()=>{
 
         <div>
 
-          <JobRequest/>
-          {/* <BuyerSidebar/> */}
+            {/* <JobReqDisplay/> */}
+          {/* <JobReqDisplay/> */}
+          {/* <JobRequest/>  */}
+          <BuyerSidebar/>
 {/* 
         <Link to='/check'>
               

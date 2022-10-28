@@ -20,7 +20,8 @@ body {
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
+    margin: 16px;
+    
   }
   
   .about-section {
@@ -32,6 +33,30 @@ body {
   
   .container {
     padding: 0 16px;
+  }
+
+  .container .buttonJob{
+
+
+    box-shadow: black 0 10px 20px -10px;
+    opacity: 1;
+    outline: 0 solid transparent;
+   /* align-content: left; */
+    margin-left: 14px;
+    display: inline;
+    border: none;
+    outline: 0;
+    width: fit-content;
+    /* display: inline-block; */
+    padding: 6px 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 24%;
+    
+
+
   }
   
   .container::after, .row::after {

@@ -24,7 +24,10 @@
 	-moz-box-sizing: border-box; 
 	padding: 8px;
 	outline: none;
-	border: 1px solid #B0CFE0;
+
+	border: 1px solid #28739E;
+
+	
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
@@ -63,10 +66,26 @@
 	padding: 9px 20px;
 	text-decoration: none;
 	font: 14px Arial, Helvetica, sans-serif;
+
+	
 }
 .form-style-9 ul li input[type="button"]:hover, 
 .form-style-9 ul li input[type="submit"]:hover {
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
 	background-color: #28739E;
+	
+}
+
+.submitJob{
+
+	outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #0A2558;
+    text-align: center;
+
+    cursor: pointer;
+    width: 18%; 	
 	
 }

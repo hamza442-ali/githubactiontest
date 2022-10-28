@@ -1,0 +1,27 @@
+
+        <link href= "./styles.css" rel="stylesheet" type="text/css" />
+
+        
+        
+        <% newListItem.forEach(function (item){ %> 
+            
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                  <div class="container">
+                    <p class="title"><%= item.title%></p>
+                    <p><%= item.skill%></p>
+                    <p><%= item.estimation%></p>
+                    <p><%= item.description%></p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+              
+        
+        <%   }) %>
+
+
+
+     

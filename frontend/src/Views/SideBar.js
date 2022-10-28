@@ -7,10 +7,13 @@ import { Link } from "react-router-dom";
 import { NavSearch} from '../Views/searchNav';
 import {Home} from './HomeBuyer.jsx'
 
+import { JobReqDisplay } from '../Views/fetchJobsRequests';
+import { JobRequest } from "./AddJobRequest";
+
 export const  BuyerSidebar =()=>{
   
     return(
-       <>
+      <div className="parent">
                
             <div className ="sidebar"> 
            
@@ -32,102 +35,56 @@ export const  BuyerSidebar =()=>{
 
                   <li>
 
-                    <Link to="/jobs">
+                    <Link to="/jobs" >
 
                      <i class='bx bx-box' ></i>
-                     <span class="links_name">Jobs</span>
+                     <span class="links_name">Display Jobs</span>
                     
                     </Link>
 
+                    {/* <Link type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="links_name">Jobs</span>
+                    <i class='bx bx-box' ></i>
+                    </Link>
+                      <div  aria-labelledby="dropdownMenuButton">
+                        <Link to="/jobDisplay"  ><span class="links_name">Display Jobs</span></Link>
+                        <Link to="/add" ><span class="links_name">Add Jobs</span></Link>
+                    
+                      </div> */}
+
+
                   </li>
 
+                  <li>
+                      <Link to="/add" >
 
-                </ul>
+                            <i class='bx bx-box' ></i>
+                            <span class="links_name">Add Jobs</span>
+
+                      </Link>
 
 
+                  </li>
 
-              
-              
-
+                </ul>   
             </div>
 
-            <section className="Home-section">
-
-                <Routes>
-                    <Route path="/Dashboard" element={<Home/>}/>
-                    <Route path="/jobs" element={<Ret/>}/>
-                </Routes>
-
-              </section>
-
-
-                <NavSearch/>
-
-            </>
-
-
-
-      // <>
-      //   <div class="sidebar">
-      //   <div class="logo-details">
-      //     <i class='bx bxl-c-plus-plus'></i>
-      //     <span class="logo_name">Workaholic</span>
-      //   </div>
-      //     <ul class="nav-links">
-      //       <li>
-      //         <a href="/#" class="active">
-      //           <i class='bx bx-grid-alt' ></i>
-      //           <span class="links_name">Dashboard</span>
-      //         </a>
-      //       </li>
-      //       <li>
-      //         <a href="/#"  class="jobs">
-      //           <i class='bx bx-box' ></i>
-      //           <span class="links_name">Jobs</span>
-      //         </a>
-      //       </li>
-
             
-      //        <li>
-      //         <a href="/#">
-      //           <i class='bx bx-list-ul' ></i>
-      //           <span class="links_name">Order list</span>
-      //         </a>
-      //       </li>
-      //       <li>
-      //         <a href="/#">
-      //           <i class='bx bx-pie-chart-alt-2' ></i>
-      //           <span class="links_name">Analytics</span>
-      //         </a>
-      //       </li>
-      //       <li>
-      //         <a href="/#">
-      //           <i class='bx bx-coin-stack' ></i>
-      //           <span class="links_name">stand for Stock</span>
-      //         </a>
-      //       </li>
-      //       <li>
-      //         <a href="/#">
-      //           <i class='bx bx-book-alt' ></i>
-      //           <span class="links_name">Total order</span>
-      //         </a>
-      //       </li>
-           
-      
-      //       <li class="log_out">
-      //         <a href="/#">
-      //           <i class='bx bcleax-log-out'></i>
-      //           <span class="links_name">Log out</span>
-      //         </a>
-      //       </li>
-      //     </ul>
-      // </div>
+           <div className="inner">
+                  <NavSearch/> 
+                        
+                  <div  className="coco">
+                        <Routes>
+                            <Route path="/Dashboard" element={<Home/>}/>
+                            <Route path="/jobs" element={< JobReqDisplay />}/>
+                            <Route path="/add" element={<JobRequest />}  /> 
+                        </Routes> 
 
-      // </> 
-
+                  </div>    
+                  
+             </div>         
+      </div>
     )
   
   } 
      
-
-    // export default BuyerSidebar;
