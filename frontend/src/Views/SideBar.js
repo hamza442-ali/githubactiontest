@@ -14,7 +14,7 @@ export const  BuyerSidebar =()=>{
   
     return(
       <div className="parent">
-               
+              
             <div className ="sidebar"> 
            
 
