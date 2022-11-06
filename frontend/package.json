@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "https://hamza442-ali.github.io/githubactiontest",
   "version": "0.1.0",
   "proxy": "http://localhost:3001",
   "private": true,
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "webpack-dev-server": "^4.11.1"
   }
 }
