@@ -14,7 +14,7 @@ export const NavSearch=()=>{
         <nav> 
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
-          <span class="dashboard">jkvtigb</span>
+          <span class="dashboard">Buyer Portal</span>
           
         </div>
   
